@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-16"?>
+<EasyQuestProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <QuestsSorted>
+    <QuestsSorted Action="PickUp" NameClass="CallofFire" />
+    <QuestsSorted Action="TurnIn" NameClass="CallofFire" />
+    <QuestsSorted Action="PickUp" NameClass="CallofFire2" />
+    <QuestsSorted Action="IfHasQuest" NameClass="1524 " />
+    <QuestsSorted Action="Pulse" NameClass="getupthefuckingpathofdoom" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="TurnIn" NameClass="CallofFire2" />
+    <QuestsSorted Action="PickUp" NameClass="CallofFire3part1" />
+    <QuestsSorted Action="Pulse" NameClass="CallofFire3part1" />
+    <QuestsSorted Action="Pulse" NameClass="CallofFire3part2" />
+    <QuestsSorted Action="IfHasQuest" NameClass="1525 " />
+    <QuestsSorted Action="Pulse" NameClass="getupthefuckingpathofdoom" />
+    <QuestsSorted Action="EndIf" NameClass="1525 " />
+    <QuestsSorted Action="TurnIn" NameClass="CallofFire3part1" />
+    <QuestsSorted Action="PickUp" NameClass="CallofFire4" />
+    <QuestsSorted Action="Wait" NameClass="1000" />
+    <QuestsSorted Action="IfHasQuest" NameClass="1526&#xD;&#xA;" />
+    <QuestsSorted Action="Pulse" NameClass="gettoshrine" />
+    <QuestsSorted Action="Wait" NameClass="1000" />
+    <QuestsSorted Action="RunCode" NameClass="ItemsManager.UseItem(6636);" />
+    <QuestsSorted Action="Pulse" NameClass="CallofFire4" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="TurnIn" NameClass="CallofFire4" />
+    <QuestsSorted Action="PulseAllInOne" NameClass="CallofFire5" />
+    <QuestsSorted Action="LoadProfile" NameClass="Wholesome\Launcher.xml" />
+  </QuestsSorted>
+  <NpcQuest>
+    <NPCQuest Id="3173" Name="Swart" GameObject="false">
+      <PickUpQuests>
+        <int>2983</int>
+      </PickUpQuests>
+      <TurnInQuests />
+      <Position X="307.114" Y="-4839.91" Z="10.52472" />
+    </NPCQuest>
+    <NPCQuest Id="5907" Name="Kranal Fiss" GameObject="false">
+      <PickUpQuests>
+        <int>1524</int>
+      </PickUpQuests>
+      <TurnInQuests>
+        <int>2983</int>
+        <int>1527</int>
+      </TurnInQuests>
+      <Position X="261.4698" Y="-3037.625" Z="96.92929" Type="Flying" />
+    </NPCQuest>
+    <NPCQuest Id="5900" Name="Telf Joolam" GameObject="false">
+      <PickUpQuests>
+        <int>1525</int>
+      </PickUpQuests>
+      <TurnInQuests>
+        <int>1524</int>
+        <int>1525</int>
+      </TurnInQuests>
+      <Position X="-269.97" Y="-4000.87" Z="168.218" Type="Flying" />
+    </NPCQuest>
+    <NPCQuest Id="61934" Name="Pyre" GameObject="true">
+      <PickUpQuests>
+        <int>1527</int>
+      </PickUpQuests>
+      <TurnInQuests>
+        <int>1526</int>
+      </TurnInQuests>
+      <Position X="-243.4765" Y="-4020.992" Z="187.3021" Type="Flying" />
+    </NPCQuest>
+  </NpcQuest>
+  <Npc />
+  <Blackspots />
+  <BlackGuids />
+  <EasyQuests>
+    <EasyQuest>
+      <Name>Call of Fire</Name>
+      <QuestId>
+        <int>2983</int>
+      </QuestId>
+      <QuestType>None</QuestType>
+      <QuestClass />
+      <ObjectiveCount1>0</ObjectiveCount1>
+      <ObjectiveCount2>0</ObjectiveCount2>
+      <ObjectiveCount3>0</ObjectiveCount3>
+      <ObjectiveCount4>0</ObjectiveCount4>
+      <ObjectiveCount5>0</ObjectiveCount5>
+      <AutoDetectObjectiveCount1>false</AutoDetectObjectiveCount1>
+      <AutoDetectObjectiveCount2>false</AutoDetectObjectiveCount2>
+      <AutoDetectObjectiveCount3>false</AutoDetectObjectiveCount3>
+      <AutoDetectObjectiveCount4>false</AutoDetectObjectiveCount4>
+      <AutoDetectObjectiveCount5>false</AutoDetectObjectiveCount5>
+      <CanCondition />
+      <IsCompleteCondition />
+      <RepeatableQuest>false</RepeatableQuest>
+      <NotRequiredInQuestLog>false</NotRequiredInQuestLog>
+      <PickUpQuestOnItem>false</PickUpQuestOnItem>
+      <PickUpQuestOnItemID>0</PickUpQuestOnItemID>
+      <Comment />
+      <GossipOptionRewardItem>1</GossipOptionRewardItem>
+      <RequiredQuest>0</RequiredQuest>
+      <MaxLevel>100</MaxLevel>
+      <MinLevel>0</MinLevel>
+      <WoWClass>None</WoWClass>
+    </EasyQuest>
+    <EasyQuest>
+      <Name>Call of Fire2</Name>
+      <QuestId>
+        <int>1524</int>
+      </QuestId>
+      <QuestType>KillAndLoot</QuestType>
+      <QuestClass xsi:type="KillAndLootEasyQuestClass">
+        <HotSpots />
+        <EntryTarget />
+        <IsGrinderNotQuest>false</IsGrinderNotQuest>
+      </QuestClass>
+      <ObjectiveCount1>0</ObjectiveCount1>
+      <ObjectiveCount2>0</ObjectiveCount2>
+      <ObjectiveCount3>0</ObjectiveCount3>
+      <ObjectiveCount4>0</ObjectiveCount4>
+      <ObjectiveCount5>0</ObjectiveCount5>
+      <AutoDetectObjectiveCount1>false</AutoDetectObjectiveCount1>
+      <AutoDetectObjectiveCount2>false</AutoDetectObjectiveCount2>
+      <AutoDetectObjectiveCount3>false</AutoDetectObjectiveCount3>
+      <AutoDetectObjectiveCount4>false</AutoDetectObjectiveCount4>
+      <AutoDetectObjectiveCount5>false</AutoDetectObjectiveCount5>
+      <CanCondition />
+      <IsCompleteCondition />
+      <RepeatableQuest>false</RepeatableQuest>
+      <NotRequiredInQuestLog>false</NotRequiredInQuestLog>
+      <PickUpQuestOnItem>false</PickUpQuestOnItem>
+      <PickUpQuestOnItemID>0</PickUpQuestOnItemID>
+      <Comment />
+      <GossipOptionRewardItem>1</GossipOptionRewardItem>
+      <RequiredQuest>0</RequiredQuest>
+      <MaxLevel>100</MaxLevel>
+      <MinLevel>0</MinLevel>
+      <WoWClass>None</WoWClass>
+    </EasyQuest>
+    <EasyQuest>
+      <Name>get_up_the_fucking_path_of_doom</Name>
+      <QuestId />
+      <QuestType>FollowPath</QuestType>
+      <QuestClass xsi:type="FollowPathEasyQuestClass">
+        <Path>
+          <Vector3 X="-226.9736" Y="-3913.011" Z="68.14141" />
+          <Vector3 X="-229.2154" Y="-3910.099" Z="68.85641" />
+          <Vector3 X="-232.2821" Y="-3906.279" Z="72.01892" />
+          <Vector3 X="-235.832" Y="-3902.708" Z="76.31829" />
+          <Vector3 X="-239.5104" Y="-3899.714" Z="79.51208" />
+          <Vector3 X="-244.2837" Y="-3898.183" Z="81.3451" />
+          <Vector3 X="-249.0052" Y="-3897.841" Z="80.674" />
+          <Vector3 X="-253.9005" Y="-3897.628" Z="81.22452" />
+          <Vector3 X="-258.7979" Y="-3897.487" Z="84.7284" />
+          <Vector3 X="-263.659" Y="-3898.035" Z="89.28494" />
+          <Vector3 X="-267.1316" Y="-3901.364" Z="92.99436" />
+          <Vector3 X="-270.2564" Y="-3905.138" Z="94.35007" />
+          <Vector3 X="-272.6985" Y="-3909.301" Z="95.93404" />
+          <Vector3 X="-270.1968" Y="-3912.946" Z="98.84125" />
+          <Vector3 X="-265.2281" Y="-3912.634" Z="102.7676" />
+          <Vector3 X="-260.4927" Y="-3911.409" Z="105.6914" />
+          <Vector3 X="-255.6232" Y="-3910.972" Z="107.5263" />
+          <Vector3 X="-250.8383" Y="-3911.962" Z="107.3068" />
+          <Vector3 X="-247.3816" Y="-3912.041" Z="106.4226" />
+          <Vector3 X="-243.8963" Y="-3913.194" Z="104.444" />
+          <Vector3 X="-240.4729" Y="-3917.678" Z="102.7618" />
+          <Vector3 X="-239.838" Y="-3924.992" Z="102.4586" />
+          <Vector3 X="-239.9252" Y="-3929.879" Z="105.0532" />
+          <Vector3 X="-240.5933" Y="-3934.732" Z="106.6726" />
+          <Vector3 X="-241.5557" Y="-3939.697" Z="108.8478" />
+          <Vector3 X="-242.4645" Y="-3944.352" Z="110.2361" />
+          <Vector3 X="-243.2915" Y="-3949.181" Z="110.4133" />
+          <Vector3 X="-243.959" Y="-3954.033" Z="110.8355" />
+          <Vector3 X="-243.9685" Y="-3959.088" Z="112.4878" />
+          <Vector3 X="-243.2928" Y="-3963.763" Z="115.1117" />
+          <Vector3 X="-241.0885" Y="-3968.083" Z="117.687" />
+          <Vector3 X="-236.6759" Y="-3970.114" Z="117.8088" />
+          <Vector3 X="-232.4432" Y="-3970.568" Z="116.6358" />
+          <Vector3 X="-229.7834" Y="-3973.644" Z="118.8391" />
+          <Vector3 X="-228.6331" Y="-3977.707" Z="120.754" />
+          <Vector3 X="-228.2377" Y="-3981.184" Z="122.7143" />
+          <Vector3 X="-227.7438" Y="-3984.647" Z="125.165" />
+          <Vector3 X="-227.5" Y="-3988.138" Z="128.2493" />
+          <Vector3 X="-227.2321" Y="-3991.739" Z="132.1125" />
+          <Vector3 X="-226.8053" Y="-3995.1" Z="135.4661" />
+          <Vector3 X="-225.6792" Y="-3998.498" Z="138.7919" />
+          <Vector3 X="-224.0385" Y="-4001.453" Z="141.4532" />
+          <Vector3 X="-222.8755" Y="-4004.738" Z="144.1298" />
+          <Vector3 X="-222.3562" Y="-4008.197" Z="146.6146" />
+          <Vector3 X="-221.6318" Y="-4011.621" Z="147.8298" />
+          <Vector3 X="-220.8574" Y="-4015.029" Z="148.9575" />
+          <Vector3 X="-220.2452" Y="-4018.433" Z="149.8956" />
+          <Vector3 X="-220.8401" Y="-4021.955" Z="151.6196" />
+          <Vector3 X="-222.7028" Y="-4024.765" Z="153.4491" />
+          <Vector3 X="-225.0171" Y="-4027.538" Z="154.9938" />
+          <Vector3 X="-227.3117" Y="-4030.178" Z="155.8953" />
+          <Vector3 X="-229.9948" Y="-4032.408" Z="157.461" />
+          <Vector3 X="-232.8669" Y="-4034.408" Z="157.2583" />
+          <Vector3 X="-236.1021" Y="-4035.284" Z="159.1489" />
+          <Vector3 X="-239.5543" Y="-4035.861" Z="160.6224" />
+          <Vector3 X="-243.1263" Y="-4035.646" Z="162.6086" />
+          <Vector3 X="-246.4685" Y="-4035.091" Z="165.2853" />
+          <Vector3 X="-249.9487" Y="-4034.839" Z="168.6182" />
+          <Vector3 X="-253.4335" Y="-4034.543" Z="171.644" />
+          <Vector3 X="-256.8325" Y="-4033.363" Z="172.6478" />
+          <Vector3 X="-261.171" Y="-4027.88" Z="171.9761" />
+          <Vector3 X="-263.1929" Y="-4025.162" Z="170.7036" />
+          <Vector3 X="-264.6659" Y="-4022.015" Z="170.0519" />
+          <Vector3 X="-264.912" Y="-4015.356" Z="169.8416" />
+        </Path>
+        <IsCompleteWhenAtLastPath>true</IsCompleteWhenAtLastPath>
+        <ForceToStartFirstPosition>false</ForceToStartFirstPosition>
+        <IsHotSpots>false</IsHotSpots>
+        <IsLoop>false</IsLoop>
+      </QuestClass>
+      <ObjectiveCount1>0</ObjectiveCount1>
+      <ObjectiveCount2>0</ObjectiveCount2>
+      <ObjectiveCount3>0</ObjectiveCount3>
+      <ObjectiveCount4>0</ObjectiveCount4>
+      <ObjectiveCount5>0</ObjectiveCount5>
+      <AutoDetectObjectiveCount1>false</AutoDetectObjectiveCount1>
+      <AutoDetectObjectiveCount2>false</AutoDetectObjectiveCount2>
+      <AutoDetectObjectiveCount3>false</AutoDetectObjectiveCount3>
+      <AutoDetectObjectiveCount4>false</AutoDetectObjectiveCount4>
+      <AutoDetectObjectiveCount5>false</AutoDetectObjectiveCount5>
+      <CanCondition />
+      <IsCompleteCondition />
+      <RepeatableQuest>false</RepeatableQuest>
+      <NotRequiredInQuestLog>true</NotRequiredInQuestLog>
+      <PickUpQuestOnItem>false</PickUpQuestOnItem>
+      <PickUpQuestOnItemID>0</PickUpQuestOnItemID>
+      <Comment />
+      <GossipOptionRewardItem>1</GossipOptionRewardItem>
+      <RequiredQuest>0</RequiredQuest>
+      <MaxLevel>100</MaxLevel>
+      <MinLevel>0</MinLevel>
+      <WoWClass>None</WoWClass>
+    </EasyQuest>
+    <EasyQuest>
+      <Name>Call of Fire3_part1</Name>
+      <QuestId>
+        <int>1525</int>
+      </QuestId>
+      <QuestType>KillAndLoot</QuestType>
+      <QuestClass xsi:type="KillAndLootEasyQuestClass">
+        <HotSpots>
+          <Vector3 X="-61.94118" Y="-3183.573" Z="92.03781" />
+          <Vector3 X="-80.9283" Y="-3129.361" Z="91.66809" />
+          <Vector3 X="-15.26208" Y="-3156.317" Z="93.89753" />
+          <Vector3 X="-56.27938" Y="-3380.78" Z="92.40214" />
+        </HotSpots>
+        <EntryTarget>
+          <int>3269</int>
+        </EntryTarget>
+        <IsGrinderNotQuest>false</IsGrinderNotQuest>
+      </QuestClass>
+      <ObjectiveCount1>0</ObjectiveCount1>
+      <ObjectiveCount2>0</ObjectiveCount2>
+      <ObjectiveCount3>0</ObjectiveCount3>
+      <ObjectiveCount4>0</ObjectiveCount4>
+      <ObjectiveCount5>0</ObjectiveCount5>
+      <AutoDetectObjectiveCount1>true</AutoDetectObjectiveCount1>
+      <AutoDetectObjectiveCount2>false</AutoDetectObjectiveCount2>
+      <AutoDetectObjectiveCount3>false</AutoDetectObjectiveCount3>
+      <AutoDetectObjectiveCount4>false</AutoDetectObjectiveCount4>
+      <AutoDetectObjectiveCount5>false</AutoDetectObjectiveCount5>
+      <CanCondition />
+      <IsCompleteCondition />
+      <RepeatableQuest>false</RepeatableQuest>
+      <NotRequiredInQuestLog>false</NotRequiredInQuestLog>
+      <PickUpQuestOnItem>false</PickUpQuestOnItem>
+      <PickUpQuestOnItemID>0</PickUpQuestOnItemID>
+      <Comment />
+      <GossipOptionRewardItem>1</GossipOptionRewardItem>
+      <RequiredQuest>0</RequiredQuest>
+      <MaxLevel>100</MaxLevel>
+      <MinLevel>0</MinLevel>
+      <WoWClass>None</WoWClass>
+    </EasyQuest>
+    <EasyQuest>
+      <Name>Call of Fire3_part2</Name>
+      <QuestId>
+        <int>1525</int>
+      </QuestId>
+      <QuestType>KillAndLoot</QuestType>
+      <QuestClass xsi:type="KillAndLootEasyQuestClass">
+        <HotSpots>
+          <Vector3 X="802.8099" Y="-4753.709" Z="36.83076" />
+          <Vector3 X="828.0042" Y="-4765.63" Z="37.06548" />
+          <Vector3 X="898.2422" Y="-4706.642" Z="24.21222" />
+          <Vector3 X="943.8949" Y="-4722.806" Z="21.45251" />
+        </HotSpots>
+        <EntryTarget>
+          <int>3196</int>
+          <int>3199</int>
+        </EntryTarget>
+        <IsGrinderNotQuest>false</IsGrinderNotQuest>
+      </QuestClass>
+      <ObjectiveCount1>0</ObjectiveCount1>
+      <ObjectiveCount2>0</ObjectiveCount2>
+      <ObjectiveCount3>0</ObjectiveCount3>
+      <ObjectiveCount4>0</ObjectiveCount4>
+      <ObjectiveCount5>0</ObjectiveCount5>
+      <AutoDetectObjectiveCount1>false</AutoDetectObjectiveCount1>
+      <AutoDetectObjectiveCount2>true</AutoDetectObjectiveCount2>
+      <AutoDetectObjectiveCount3>false</AutoDetectObjectiveCount3>
+      <AutoDetectObjectiveCount4>false</AutoDetectObjectiveCount4>
+      <AutoDetectObjectiveCount5>false</AutoDetectObjectiveCount5>
+      <CanCondition />
+      <IsCompleteCondition />
+      <RepeatableQuest>false</RepeatableQuest>
+      <NotRequiredInQuestLog>false</NotRequiredInQuestLog>
+      <PickUpQuestOnItem>false</PickUpQuestOnItem>
+      <PickUpQuestOnItemID>0</PickUpQuestOnItemID>
+      <Comment />
+      <GossipOptionRewardItem>1</GossipOptionRewardItem>
+      <RequiredQuest>0</RequiredQuest>
+      <MaxLevel>100</MaxLevel>
+      <MinLevel>0</MinLevel>
+      <WoWClass>None</WoWClass>
+    </EasyQuest>
+    <EasyQuest>
+      <Name>Call of Fire4</Name>
+      <QuestId>
+        <int>1526</int>
+      </QuestId>
+      <QuestType>KillAndLoot</QuestType>
+      <QuestClass xsi:type="KillAndLootEasyQuestClass">
+        <HotSpots>
+          <Vector3 X="-245.6097" Y="-4012.395" Z="187.3021" />
+        </HotSpots>
+        <EntryTarget>
+          <int>5893</int>
+        </EntryTarget>
+        <IsGrinderNotQuest>false</IsGrinderNotQuest>
+      </QuestClass>
+      <ObjectiveCount1>0</ObjectiveCount1>
+      <ObjectiveCount2>0</ObjectiveCount2>
+      <ObjectiveCount3>0</ObjectiveCount3>
+      <ObjectiveCount4>0</ObjectiveCount4>
+      <ObjectiveCount5>0</ObjectiveCount5>
+      <AutoDetectObjectiveCount1>true</AutoDetectObjectiveCount1>
+      <AutoDetectObjectiveCount2>false</AutoDetectObjectiveCount2>
+      <AutoDetectObjectiveCount3>false</AutoDetectObjectiveCount3>
+      <AutoDetectObjectiveCount4>false</AutoDetectObjectiveCount4>
+      <AutoDetectObjectiveCount5>false</AutoDetectObjectiveCount5>
+      <CanCondition />
+      <IsCompleteCondition />
+      <RepeatableQuest>false</RepeatableQuest>
+      <NotRequiredInQuestLog>false</NotRequiredInQuestLog>
+      <PickUpQuestOnItem>false</PickUpQuestOnItem>
+      <PickUpQuestOnItemID>0</PickUpQuestOnItemID>
+      <Comment />
+      <GossipOptionRewardItem>1</GossipOptionRewardItem>
+      <RequiredQuest>0</RequiredQuest>
+      <MaxLevel>100</MaxLevel>
+      <MinLevel>0</MinLevel>
+      <WoWClass>None</WoWClass>
+    </EasyQuest>
+    <EasyQuest>
+      <Name>get_to_shrine</Name>
+      <QuestId />
+      <QuestType>FollowPath</QuestType>
+      <QuestClass xsi:type="FollowPathEasyQuestClass">
+        <Path>
+          <Vector3 X="-265.0305" Y="-3996.708" Z="169.1269" />
+          <Vector3 X="-261.6653" Y="-3990.571" Z="169.4219" />
+          <Vector3 X="-259.8478" Y="-3987.458" Z="169.8616" />
+          <Vector3 X="-257.0049" Y="-3982.152" Z="168.4139" />
+        </Path>
+        <IsCompleteWhenAtLastPath>true</IsCompleteWhenAtLastPath>
+        <ForceToStartFirstPosition>false</ForceToStartFirstPosition>
+        <IsHotSpots>false</IsHotSpots>
+        <IsLoop>false</IsLoop>
+      </QuestClass>
+      <ObjectiveCount1>0</ObjectiveCount1>
+      <ObjectiveCount2>0</ObjectiveCount2>
+      <ObjectiveCount3>0</ObjectiveCount3>
+      <ObjectiveCount4>0</ObjectiveCount4>
+      <ObjectiveCount5>0</ObjectiveCount5>
+      <AutoDetectObjectiveCount1>false</AutoDetectObjectiveCount1>
+      <AutoDetectObjectiveCount2>false</AutoDetectObjectiveCount2>
+      <AutoDetectObjectiveCount3>false</AutoDetectObjectiveCount3>
+      <AutoDetectObjectiveCount4>false</AutoDetectObjectiveCount4>
+      <AutoDetectObjectiveCount5>false</AutoDetectObjectiveCount5>
+      <CanCondition />
+      <IsCompleteCondition />
+      <RepeatableQuest>false</RepeatableQuest>
+      <NotRequiredInQuestLog>true</NotRequiredInQuestLog>
+      <PickUpQuestOnItem>false</PickUpQuestOnItem>
+      <PickUpQuestOnItemID>0</PickUpQuestOnItemID>
+      <Comment />
+      <GossipOptionRewardItem>1</GossipOptionRewardItem>
+      <RequiredQuest>0</RequiredQuest>
+      <MaxLevel>100</MaxLevel>
+      <MinLevel>0</MinLevel>
+      <WoWClass>None</WoWClass>
+    </EasyQuest>
+    <EasyQuest>
+      <Name>Call of Fire5</Name>
+      <QuestId>
+        <int>1527</int>
+      </QuestId>
+      <QuestType>KillAndLoot</QuestType>
+      <QuestClass xsi:type="KillAndLootEasyQuestClass">
+        <HotSpots />
+        <EntryTarget />
+        <IsGrinderNotQuest>false</IsGrinderNotQuest>
+      </QuestClass>
+      <ObjectiveCount1>0</ObjectiveCount1>
+      <ObjectiveCount2>0</ObjectiveCount2>
+      <ObjectiveCount3>0</ObjectiveCount3>
+      <ObjectiveCount4>0</ObjectiveCount4>
+      <ObjectiveCount5>0</ObjectiveCount5>
+      <AutoDetectObjectiveCount1>false</AutoDetectObjectiveCount1>
+      <AutoDetectObjectiveCount2>false</AutoDetectObjectiveCount2>
+      <AutoDetectObjectiveCount3>false</AutoDetectObjectiveCount3>
+      <AutoDetectObjectiveCount4>false</AutoDetectObjectiveCount4>
+      <AutoDetectObjectiveCount5>false</AutoDetectObjectiveCount5>
+      <CanCondition />
+      <IsCompleteCondition />
+      <RepeatableQuest>false</RepeatableQuest>
+      <NotRequiredInQuestLog>false</NotRequiredInQuestLog>
+      <PickUpQuestOnItem>false</PickUpQuestOnItem>
+      <PickUpQuestOnItemID>0</PickUpQuestOnItemID>
+      <Comment />
+      <GossipOptionRewardItem>1</GossipOptionRewardItem>
+      <RequiredQuest>0</RequiredQuest>
+      <MaxLevel>100</MaxLevel>
+      <MinLevel>0</MinLevel>
+      <WoWClass>None</WoWClass>
+    </EasyQuest>
+  </EasyQuests>
+  <Script>
+public class MyCustomScript
+{
+    static MyCustomScript()
+    {
+        // You can put here code to run when bot start, you can also add methods and classes.
+    }
+}
+</Script>
+  <OffMeshConnections />
+</EasyQuestProfile>

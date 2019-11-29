@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EasyQuestProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <QuestsSorted>
+    <QuestsSorted Action="None" NameClass="READ ME:&#xD;&#xA;&#xD;&#xA;To get portal position and Entry ID:&#xD;&#xA;- Click on menu &quot;Tools&quot; &gt; &quot;Helper Tools&quot;&#xD;&#xA;- In &quot;Helper tools&quot; window, replace text &quot;GameObject Name&quot; by the portal name (you can get portal name in game when you put mouse over it).&#xD;&#xA;- In &quot;Helper tools&quot; window, click on button &quot;GameObject info by name&quot;&#xD;&#xA;- You can found Entry ID in first lline (sample, in &quot;EntryIdObjects .Add(242447); // Mailbox  : http://www.wowhead.com/object=242447&quot; the id is 242447)&#xD;&#xA;- You can found Position in second line (sample, in &quot;HotSpots.Add(new Vector3(-1858.24f, 5388.41f, -12.4281f));&quot; position X is -1858.24, position Y  is 5388.41 and Z is -12.4281)&#xD;&#xA;&#xD;&#xA;To take portal: &#xD;&#xA;&#xD;&#xA;- In the step 2 (While), replace &quot;-1831.95f, 5298.3f, -12.42793f&quot; by portal position.&#xD;&#xA;- In the step 2 (While), replace &quot;300&quot; by portal max distance (if distance is bigger at the value, portal is skipped)).&#xD;&#xA;&#xD;&#xA;- In the step 3 (RunCode), replace &quot;-1831.95f, 5298.3f, -12.42793f&quot; by portal position.&#xD;&#xA;- In the step 3 (RunCode), replace &quot;18940&quot; by the portal entry ID." />
+    <QuestsSorted Action="WriteLog" NameClass="GoToPortal" />
+    <QuestsSorted Action="RunCode" NameClass="wManager.wManagerSetting.CurrentSetting.CloseIfPlayerTeleported = false;" />
+    <QuestsSorted Action="While" NameClass="ObjectManager.Me.Position.DistanceTo2D(new Vector3(10032.4f, -7000.29f, 61.3098f)) &gt; 300" />
+    <QuestsSorted Action="RunCode" NameClass="var position = new Vector3(10032.4f, -7000.29f, 61.3098f);&#xD;&#xA;int objEntryId = 184502;&#xD;&#xA;&#xD;&#xA;if (wManager.Wow.Bot.Tasks.GoToTask.ToPositionAndIntecractWithGameObject(position, objEntryId))&#xD;&#xA;{&#xD;&#xA;    System.Threading.Thread.Sleep(1500);&#xD;&#xA;}" />
+    <QuestsSorted Action="EndWhile" NameClass="" />
+    <QuestsSorted Action="WriteLog" NameClass="GoToPortal End" />
+    <QuestsSorted Action="LoadProfile" NameClass="Wholesome\Launcher.xml" />
+  </QuestsSorted>
+  <NpcQuest />
+  <Npc />
+  <EasyQuests />
+  <Script>
+public class MyCustomScript
+{
+    static MyCustomScript()
+    {
+        // You can put here code to run when bot start, you can also add methods and classes.
+    }
+}
+</Script>
+  <OffMeshConnections />
+  <BlacklistNpc />
+  <BlacklistNpcType />
+  <Blackspots />
+</EasyQuestProfile>

@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EasyQuestProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <QuestsSorted>
+    <QuestsSorted Action="RunLuaCode" NameClass="DEFAULT_CHAT_FRAME:AddMessage(&quot;Current Profile: Learn Riding Silvermoon&quot;)" />
+    <QuestsSorted Action="If" NameClass="!wManager.Wow.Helpers.Skill.Has(wManager.Wow.Enums﻿.SkillLine.Riding) &amp;&amp; Lua.LuaDoString&lt;int&gt;(&quot;return GetMoney()&quot;) &gt;= 100000 &amp;&amp; Usefuls.ContinentId == (int)ContinentId.Kalimdor &amp;&amp; wManager.Wow.Helpers.Usefuls.MapZoneName != &quot;Thuron's Livery&quot;" />
+    <QuestsSorted Action="None" NameClass="        if (wManager.Wow.Bot.Tasks.GoToTask.ToPositionAndIntecractWithNpc(new robotManager.Helpful.Vector3(2151.36f, -4654.14f, 50.1143f), 4752)) &#xD;&#xA;        { &#xD;&#xA;            wManager.Wow.Helpers.Usefuls.SelectGossipOption(wManager.Wow.Enums.GossipOptionsType.trainer);&#xD;&#xA;            wManager.Wow.Helpers.Trainer.TrainingSpell();&#xD;&#xA;        }" />
+    <QuestsSorted Action="Pulse" NameClass="CatchZeppelinShip" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="If" NameClass="!wManager.Wow.Helpers.Skill.Has(wManager.Wow.Enums﻿.SkillLine.Riding) &amp;&amp; Lua.LuaDoString&lt;int&gt;(&quot;return GetMoney()&quot;) &gt;= 100000 &amp;&amp; Usefuls.ContinentId != (int)ContinentId.Kalimdor &amp;&amp; wManager.Wow.Helpers.Usefuls.MapZoneName == &quot;Tirisfal Glades&quot;" />
+    <QuestsSorted Action="None" NameClass="READ ME:&#xD;&#xA;&#xD;&#xA;To get portal position and Entry ID:&#xD;&#xA;- Click on menu &quot;Tools&quot; &gt; &quot;Helper Tools&quot;&#xD;&#xA;- In &quot;Helper tools&quot; window, replace text &quot;GameObject Name&quot; by the portal name (you can get portal name in game when you put mouse over it).&#xD;&#xA;- In &quot;Helper tools&quot; window, click on button &quot;GameObject info by name&quot;&#xD;&#xA;- You can found Entry ID in first lline (sample, in &quot;EntryIdObjects .Add(242447); // Mailbox  : http://www.wowhead.com/object=242447&quot; the id is 242447)&#xD;&#xA;- You can found Position in second line (sample, in &quot;HotSpots.Add(new Vector3(-1858.24f, 5388.41f, -12.4281f));&quot; position X is -1858.24, position Y  is 5388.41 and Z is -12.4281)&#xD;&#xA;&#xD;&#xA;To take portal: &#xD;&#xA;&#xD;&#xA;- In the step 2 (While), replace &quot;-1831.95f, 5298.3f, -12.42793f&quot; by portal position.&#xD;&#xA;- In the step 2 (While), replace &quot;300&quot; by portal max distance (if distance is bigger at the value, portal is skipped)).&#xD;&#xA;&#xD;&#xA;- In the step 3 (RunCode), replace &quot;-1831.95f, 5298.3f, -12.42793f&quot; by portal position.&#xD;&#xA;- In the step 3 (RunCode), replace &quot;18940&quot; by the portal entry ID." />
+    <QuestsSorted Action="WriteLog" NameClass="GoToPortal" />
+    <QuestsSorted Action="RunCode" NameClass="wManager.wManagerSetting.CurrentSetting.CloseIfPlayerTeleported = false;" />
+    <QuestsSorted Action="While" NameClass="ObjectManager.Me.Position.DistanceTo2D(new Vector3(1805.85f, 348.865f, 70.8727f)) &gt; 300" />
+    <QuestsSorted Action="RunCode" NameClass="var position = new Vector3(1805.85f, 348.865f, 70.8727f);&#xD;&#xA;int objEntryId = 184503;&#xD;&#xA;&#xD;&#xA;if (wManager.Wow.Bot.Tasks.GoToTask.ToPositionAndIntecractWithGameObject(position, objEntryId))&#xD;&#xA;{&#xD;&#xA;    System.Threading.Thread.Sleep(1500);&#xD;&#xA;}" />
+    <QuestsSorted Action="EndWhile" NameClass="" />
+    <QuestsSorted Action="WriteLog" NameClass="GoToPortal End" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="If" NameClass="!wManager.Wow.Helpers.Skill.Has(wManager.Wow.Enums﻿.SkillLine.Riding) &amp;&amp; Lua.LuaDoString&lt;int&gt;(&quot;return GetMoney()&quot;) &gt;= 100000" />
+    <QuestsSorted Action="RunCode" NameClass="        if (wManager.Wow.Bot.Tasks.GoToTask.ToPositionAndIntecractWithNpc(new robotManager.Helpful.Vector3(9269.23f, -7510.49f, 37.83032f), 16280)) &#xD;&#xA;        { &#xD;&#xA;            wManager.Wow.Helpers.Usefuls.SelectGossipOption(wManager.Wow.Enums.GossipOptionsType.trainer);&#xD;&#xA;            wManager.Wow.Helpers.Trainer.TrainingSpell();&#xD;&#xA;        }" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="RunLuaCode" NameClass="DEFAULT_CHAT_FRAME:AddMessage(&quot;Current Profile: Learn Riding Ogrimmar, Done!&quot;)" />
+    <QuestsSorted Action="If" NameClass="wManager.Wow.Helpers.SpellManager.KnowSpell(34795)" />
+    <QuestsSorted Action="RunLuaCode" NameClass="DEFAULT_CHAT_FRAME:AddMessage(&quot;You already Know a Red Hawkstrider, setting Mount Name&quot;)" />
+    <QuestsSorted Action="RunCode" NameClass="wManager.wManagerSetting.CurrentSetting.GroundMountName = &quot;Red Hawkstrider&quot;;" />
+    <QuestsSorted Action="RunCode" NameClass="wManager.Wow.Forms.UserControlTabGeneralSettings.ReloadGeneralSettings();" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="If" NameClass="wManager.wManagerSetting.CurrentSetting.GroundMountName == string.Empty" />
+    <QuestsSorted Action="RunLuaCode" NameClass="DEFAULT_CHAT_FRAME:AddMessage(&quot;Current Profile: Buy Ride!&quot;)" />
+    <QuestsSorted Action="RunCode" NameClass="if (wManager.wManagerSetting.CurrentSetting.GroundMountName == string.Empty)&#xD;&#xA; {&#xD;&#xA; wManager.Wow.Bot.Tasks.GoToTask.ToPositionAndIntecractWithNpc(new Vector3(9243.97f, -7496.22f, 37.0513f), 16264, 1, false);&#xD;&#xA; System.Threading.Thread.Sleep(5000);&#xD;&#xA; wManager.Wow.Helpers.Vendor.BuyItem(&quot;Red Hawkstrider&quot;,1); // change Skinning Knife to what item you want. do not remove &quot;&quot;&#xD;&#xA; System.Threading.Thread.Sleep(5000); &#xD;&#xA; }&#xD;&#xA; &#xD;&#xA; &#xD;&#xA;" />
+    <QuestsSorted Action="RunCode" NameClass="if (ItemsManager.HasItemById(28927)) &#xD;&#xA; {&#xD;&#xA; ItemsManager.UseItem(28927);﻿&#xD;&#xA; System.Threading.Thread.Sleep(1000); &#xD;&#xA; }" />
+    <QuestsSorted Action="RunCode" NameClass="wManager.wManagerSetting.CurrentSetting.GroundMountName = &quot;Red Hawkstrider&quot;;" />
+    <QuestsSorted Action="RunCode" NameClass="wManager.Wow.Forms.UserControlTabGeneralSettings.ReloadGeneralSettings();" />
+    <QuestsSorted Action="RunLuaCode" NameClass="DEFAULT_CHAT_FRAME:AddMessage(&quot;Current Profile: Buy Ride, Done!&quot;)" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="LoadProfile" NameClass="Wholesome\Launcher.xml" />
+  </QuestsSorted>
+  <NpcQuest />
+  <Npc />
+  <EasyQuests>
+    <EasyQuest>
+      <Name>Catch Zeppelin/Ship</Name>
+      <QuestId />
+      <QuestType>OverridePulseCSharpCode</QuestType>
+      <QuestClass xsi:type="OverridePulseCSharpCodeEasyQuestClass">
+        <Code>// I am using the sample of how to use Zeppelin/Ship
+
+/* Quest settings:
+    * Can condition: "return Usefuls.ContinentId == (int) ContinentId.Kalimdor;"
+    * Is complete condition: "return Usefuls.ContinentId == (int) ContinentId.Northrend &amp;&amp; !ObjectManager.Me.InTransport;"
+    * Not required in quest log: "True"
+    * Quest type: "OverridePulseCSharpCode"
+*/
+
+// You can get zeppelin/ship/player positions and entry ID in tab "Tools" &gt; "Development Tools" &gt; "Dump all informations" (or "Memory information").
+
+// Settings:
+var zeppelinEntryId = 164871; // Zeppelin/Ship EntryId
+
+// From
+var fromZeppelinWaitPosition = new Vector3(1318.107, -4658.047, 71.86043); // Position where Zeppelin/Ship waits players (from)
+var fromPlayerWaitPosition = new Vector3(1323.866, -4651.902, 53.80487); // Position where the player waits Zeppelin/Ship (from)
+var fromPlayerInZeppelinPosition = new Vector3(1314.561, -4653.52, 54.11075); // Position where the player waits in the Zeppelin/Ship (from)
+
+// To
+var toZeppelinWaitPosition = new Vector3(2062.376, 292.9981, 114.973); // Position where Zeppelin/Ship waits players (to)
+var toPlayerLeavePosition = new Vector3(2066.346, 287.3938, 97.03135); // Position to go out the Zeppelin/Ship (to)
+
+// Change WRobot settings:
+wManager.wManagerSetting.CurrentSetting.CloseIfPlayerTeleported = false;
+
+// Code:
+if (!Conditions.InGameAndConnectedAndProductStartedNotInPause)
+    return true;
+
+if (Usefuls.ContinentId == (int)ContinentId.Kalimdor)
+{
+    if (!ObjectManager.Me.InTransport)
+    {
+        if (GoToTask.ToPosition(fromPlayerWaitPosition))
+        {
+            var zeppelin = ObjectManager.GetWoWGameObjectByEntry(zeppelinEntryId).OrderBy(o =&gt; o.GetDistance).FirstOrDefault();
+            if (zeppelin != null &amp;&amp; zeppelin.Position.DistanceTo(fromZeppelinWaitPosition) &lt; 1)
+            {
+                GoToTask.ToPosition(fromPlayerInZeppelinPosition);
+            }
+        }
+    }
+}
+else if (Usefuls.ContinentId == (int)ContinentId.Azeroth)
+{
+    if (ObjectManager.Me.InTransport)
+    {
+        var zeppelin = ObjectManager.GetWoWGameObjectByEntry(zeppelinEntryId).OrderBy(o =&gt; o.GetDistance).FirstOrDefault();
+        if (zeppelin != null &amp;&amp; zeppelin.Position.DistanceTo(toZeppelinWaitPosition) &lt; 1)
+        {
+            GoToTask.ToPosition(toPlayerLeavePosition);
+        }
+    }
+}
+return true;</Code>
+      </QuestClass>
+      <ObjectiveCount1>0</ObjectiveCount1>
+      <ObjectiveCount2>0</ObjectiveCount2>
+      <ObjectiveCount3>0</ObjectiveCount3>
+      <ObjectiveCount4>0</ObjectiveCount4>
+      <ObjectiveCount5>0</ObjectiveCount5>
+      <AutoDetectObjectiveCount1>false</AutoDetectObjectiveCount1>
+      <AutoDetectObjectiveCount2>false</AutoDetectObjectiveCount2>
+      <AutoDetectObjectiveCount3>false</AutoDetectObjectiveCount3>
+      <AutoDetectObjectiveCount4>false</AutoDetectObjectiveCount4>
+      <AutoDetectObjectiveCount5>false</AutoDetectObjectiveCount5>
+      <CanCondition>return Usefuls.ContinentId == (int) ContinentId.Kalimdor;</CanCondition>
+      <IsCompleteCondition>return Usefuls.ContinentId == (int) ContinentId.Azeroth &amp;&amp; !ObjectManager.Me.InTransport;</IsCompleteCondition>
+      <RepeatableQuest>false</RepeatableQuest>
+      <NotRequiredInQuestLog>true</NotRequiredInQuestLog>
+      <PickUpQuestOnItem>false</PickUpQuestOnItem>
+      <PickUpQuestOnItemID>0</PickUpQuestOnItemID>
+      <Comment />
+      <GossipOptionRewardItem>1</GossipOptionRewardItem>
+      <RequiredQuest>0</RequiredQuest>
+      <MaxLevel>999</MaxLevel>
+      <MinLevel>0</MinLevel>
+      <WoWClass>None</WoWClass>
+    </EasyQuest>
+  </EasyQuests>
+  <Script>
+public class MyCustomScript
+{
+    static MyCustomScript()
+    {
+        // You can put here code to run when bot start, you can also add methods and classes.
+    }
+}
+</Script>
+  <OffMeshConnections />
+  <BlacklistNpc />
+  <BlacklistNpcType />
+  <Blackspots />
+</EasyQuestProfile>

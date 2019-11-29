@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EasyQuestProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <QuestsSorted>
+    <QuestsSorted Action="If" NameClass="wManager.Wow.Helpers.Usefuls.MapZoneName == &quot;Ghostlands&quot;" />
+    <QuestsSorted Action="RunLuaCode" NameClass="DEFAULT_CHAT_FRAME:AddMessage(&quot;Current Profile: Moving from  Ghostlands to Undercity Started&quot;)" />
+    <QuestsSorted Action="Pulse" NameClass="UndercityPortal" />
+    <QuestsSorted Action="RunLuaCode" NameClass="DEFAULT_CHAT_FRAME:AddMessage(&quot;Current Profile: Moving from  Eversong to Undercity Done&quot;)" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="LoadProfile" NameClass="Wholesome\Launcher.xml" />
+  </QuestsSorted>
+  <NpcQuest />
+  <Npc>
+    <Npc>
+      <Position X="7511.88" Y="-6841.08" Z="83.6655" Type="Flying" />
+      <Entry>16268</Entry>
+      <Name>Eralan</Name>
+      <GossipOption>-1</GossipOption>
+      <Active>true</Active>
+      <Faction>Neutral</Faction>
+      <Type>Vendor</Type>
+      <VendorItemClass>Food</VendorItemClass>
+      <ContinentId>Expansion01</ContinentId>
+    </Npc>
+    <Npc>
+      <Position X="7555.68" Y="-6857.73" Z="93.58012" Type="Flying" />
+      <Entry>16528</Entry>
+      <Name>Provisioner Vredigar</Name>
+      <GossipOption>-1</GossipOption>
+      <Active>true</Active>
+      <Faction>Neutral</Faction>
+      <Type>Repair</Type>
+      <VendorItemClass>Food</VendorItemClass>
+      <ContinentId>Expansion01</ContinentId>
+    </Npc>
+    <Npc>
+      <Position X="7622.97" Y="-6845.61" Z="83.8894" Type="Flying" />
+      <Entry>16187</Entry>
+      <Name>Quartermaster Lymel</Name>
+      <GossipOption>-1</GossipOption>
+      <Active>true</Active>
+      <Faction>Neutral</Faction>
+      <Type>Vendor</Type>
+      <VendorItemClass>Food</VendorItemClass>
+      <ContinentId>Expansion01</ContinentId>
+    </Npc>
+    <Npc>
+      <Position X="7604.85" Y="-6905.62" Z="93.76223" Type="Flying" />
+      <Entry>17655</Entry>
+      <Name>Blacksmith Frances</Name>
+      <GossipOption>-1</GossipOption>
+      <Active>true</Active>
+      <Faction>Neutral</Faction>
+      <Type>Repair</Type>
+      <VendorItemClass>Food</VendorItemClass>
+      <ContinentId>Expansion01</ContinentId>
+    </Npc>
+    <Npc>
+      <Position X="7535.26" Y="-6878.81" Z="111.9156" Type="Flying" />
+      <Entry>18426</Entry>
+      <Name>Terellia</Name>
+      <GossipOption>-1</GossipOption>
+      <Active>true</Active>
+      <Faction>Neutral</Faction>
+      <Type>Repair</Type>
+      <VendorItemClass>Food</VendorItemClass>
+      <ContinentId>Expansion01</ContinentId>
+    </Npc>
+    <Npc>
+      <Position X="7552.205" Y="-6889.549" Z="96.02917" Type="Flying" />
+      <Entry>49955</Entry>
+      <Name>Leonic Truehair</Name>
+      <GossipOption>-1</GossipOption>
+      <Active>true</Active>
+      <Faction>Neutral</Faction>
+      <Type>WarriorTrainer</Type>
+      <VendorItemClass>Food</VendorItemClass>
+      <ContinentId>Expansion01</ContinentId>
+    </Npc>
+    <Npc>
+      <Position X="7552.26" Y="-6887.38" Z="96.02815" Type="Flying" />
+      <Entry>49954</Entry>
+      <Name>Haris Lightsbreath</Name>
+      <GossipOption>-1</GossipOption>
+      <Active>true</Active>
+      <Faction>Neutral</Faction>
+      <Type>PaladinTrainer</Type>
+      <VendorItemClass>Food</VendorItemClass>
+      <ContinentId>Expansion01</ContinentId>
+    </Npc>
+    <Npc>
+      <Position X="7579.02" Y="-6860.12" Z="93.3493" Type="Flying" />
+      <Entry>181883</Entry>
+      <Name>Mailbox</Name>
+      <GossipOption>-1</GossipOption>
+      <Active>true</Active>
+      <Faction>Neutral</Faction>
+      <Type>Mailbox</Type>
+      <VendorItemClass>Food</VendorItemClass>
+      <ContinentId>Expansion01</ContinentId>
+    </Npc>
+    <Npc>
+      <Position X="7555.5" Y="-7668.76" Z="151.2847" Type="Flying" />
+      <Entry>17656</Entry>
+      <Name>Heron Skygaze</Name>
+      <GossipOption>-1</GossipOption>
+      <Active>true</Active>
+      <Faction>Neutral</Faction>
+      <Type>Vendor</Type>
+      <VendorItemClass>Food</VendorItemClass>
+      <ContinentId>Expansion01</ContinentId>
+    </Npc>
+    <Npc>
+      <Position X="7561.88" Y="-7663.5" Z="151.2825" Type="Flying" />
+      <Entry>16274</Entry>
+      <Name>Narina</Name>
+      <GossipOption>-1</GossipOption>
+      <Active>true</Active>
+      <Faction>Neutral</Faction>
+      <Type>Repair</Type>
+      <VendorItemClass>Food</VendorItemClass>
+      <ContinentId>Expansion01</ContinentId>
+    </Npc>
+    <Npc>
+      <Position X="7552.26" Y="-6887.38" Z="96.02812" Type="Flying" />
+      <Entry>49954</Entry>
+      <Name>Haris Lightsbreath</Name>
+      <GossipOption>-1</GossipOption>
+      <Active>true</Active>
+      <Faction>Neutral</Faction>
+      <Type>PaladinTrainer</Type>
+      <VendorItemClass>Food</VendorItemClass>
+      <ContinentId>Expansion01</ContinentId>
+    </Npc>
+  </Npc>
+  <EasyQuests>
+    <EasyQuest>
+      <Name>Undercity Portal</Name>
+      <QuestId />
+      <QuestType>OverridePulseCSharpCode</QuestType>
+      <QuestClass xsi:type="OverridePulseCSharpCodeEasyQuestClass">
+        <Code>wManager.wManagerSetting.CurrentSetting.CloseIfPlayerTeleported = false;
+wManager.Wow.Bot.Tasks.GoToTask.ToPositionAndIntecractWithGameObject(new Vector3(10034.63, -7000.584, 61.67049), 184502);
+Thread.Sleep(5000);
+return true;
+</Code>
+      </QuestClass>
+      <ObjectiveCount1>0</ObjectiveCount1>
+      <ObjectiveCount2>0</ObjectiveCount2>
+      <ObjectiveCount3>0</ObjectiveCount3>
+      <ObjectiveCount4>0</ObjectiveCount4>
+      <ObjectiveCount5>0</ObjectiveCount5>
+      <AutoDetectObjectiveCount1>false</AutoDetectObjectiveCount1>
+      <AutoDetectObjectiveCount2>false</AutoDetectObjectiveCount2>
+      <AutoDetectObjectiveCount3>false</AutoDetectObjectiveCount3>
+      <AutoDetectObjectiveCount4>false</AutoDetectObjectiveCount4>
+      <AutoDetectObjectiveCount5>false</AutoDetectObjectiveCount5>
+      <CanCondition>return Usefuls.ContinentId == 530;</CanCondition>
+      <IsCompleteCondition>return Usefuls.ContinentId == 0;</IsCompleteCondition>
+      <RepeatableQuest>false</RepeatableQuest>
+      <NotRequiredInQuestLog>true</NotRequiredInQuestLog>
+      <PickUpQuestOnItem>false</PickUpQuestOnItem>
+      <PickUpQuestOnItemID>0</PickUpQuestOnItemID>
+      <Comment />
+      <GossipOptionRewardItem>6</GossipOptionRewardItem>
+      <RequiredQuest>0</RequiredQuest>
+      <MaxLevel>100</MaxLevel>
+      <MinLevel>0</MinLevel>
+      <WoWClass>None</WoWClass>
+    </EasyQuest>
+  </EasyQuests>
+  <Script />
+  <OffMeshConnections>
+    <OffMeshConnection>
+      <Path>
+        <Vector3 X="2066.835" Y="289.1198" Z="97.03132" />
+        <Vector3 X="2069.023" Y="296.8334" Z="97.32385" />
+      </Path>
+      <ContinentId>0</ContinentId>
+      <Type>Unidirectional</Type>
+      <TryToUseEvenIfCanFindPathSuccess>false</TryToUseEvenIfCanFindPathSuccess>
+      <Name>Zeppelin</Name>
+    </OffMeshConnection>
+    <OffMeshConnection>
+      <Path>
+        <Vector3 X="1835.873" Y="-4385.681" Z="135.0616" />
+        <Vector3 X="1843.876" Y="-4394.533" Z="135.233" />
+      </Path>
+      <ContinentId>1</ContinentId>
+      <Type>Unidirectional</Type>
+      <TryToUseEvenIfCanFindPathSuccess>false</TryToUseEvenIfCanFindPathSuccess>
+      <Name>Zeppelin</Name>
+    </OffMeshConnection>
+  </OffMeshConnections>
+  <BlacklistNpc />
+  <BlacklistNpcType />
+  <Blackspots />
+</EasyQuestProfile>

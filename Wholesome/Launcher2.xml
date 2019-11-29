@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EasyQuestProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <QuestsSorted>
+    <QuestsSorted Action="RunLuaCode" NameClass="DEFAULT_CHAT_FRAME:AddMessage(&quot;Welcome to the Wholesome Leveling Experience&quot;)" />
+    <QuestsSorted Action="RunCode" NameClass="blacklistzone.List();&#xD;&#xA;&#xD;&#xA;SettingsWow.Settings();" />
+    <QuestsSorted Action="If" NameClass="ObjectManager.Me.Level &lt; 58" />
+    <QuestsSorted Action="If" NameClass="ObjectManager.Me.PlayerRace == PlayerFactions.Tauren &amp;&amp; ObjectManager.Me.Level &gt;= 1 &amp;&amp; ObjectManager.Me.Level &lt; 12" />
+    <QuestsSorted Action="LoadProfile" NameClass="Wholesome\Tauren (1-12).xml" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="If" NameClass="ObjectManager.Me.PlayerRace == PlayerFactions.Undead &amp;&amp; ObjectManager.Me.Level &gt;= 1 &amp;&amp; ObjectManager.Me.Level &lt; 12" />
+    <QuestsSorted Action="If" NameClass="ObjectManager.Me.PlayerRace == PlayerFactions.Undead &amp;&amp; ObjectManager.Me.Level &gt;= 1 &amp;&amp; ObjectManager.Me.Level &lt; 12" />
+    <QuestsSorted Action="LoadProfile" NameClass="Wholesome\Undead (1-12).xml" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="LoadProfile" NameClass="Wholesome\Helper\GoTo UndercityToOgrimmar.xml" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="If" NameClass="ObjectManager.Me.PlayerRace == PlayerFactions.BloodElf &amp;&amp; ObjectManager.Me.Level &gt;= 1 &amp;&amp; ObjectManager.Me.Level &lt;= 15" />
+    <QuestsSorted Action="If" NameClass="ObjectManager.Me.PlayerRace == PlayerFactions.BloodElf &amp;&amp; ObjectManager.Me.Level &gt;= 1 &amp;&amp; ObjectManager.Me.Level &lt; 6" />
+    <QuestsSorted Action="LoadProfile" NameClass="Wholesome\Blood Elf (1-6).xml" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="If" NameClass="ObjectManager.Me.PlayerRace == PlayerFactions.BloodElf &amp;&amp; ObjectManager.Me.Level &gt;= 6 &amp;&amp; ObjectManager.Me.Level &lt; 10" />
+    <QuestsSorted Action="LoadProfile" NameClass="Wholesome\Blood Elf (6-10).xml" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="If" NameClass="ObjectManager.Me.PlayerRace == PlayerFactions.BloodElf &amp;&amp; ObjectManager.Me.Level &gt;= 10 &amp;&amp; (!wManager.Wow.Helpers.SpellManager.KnowSpell(6991)) &amp;&amp; (ObjectManager.Me.WowClass == WoWClass.Hunter)" />
+    <QuestsSorted Action="LoadProfile" NameClass="Wholesome\Helper\Classquest Blood Elf Hunter.xml" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="If" NameClass="ObjectManager.Me.PlayerRace == PlayerFactions.BloodElf &amp;&amp; ObjectManager.Me.Level &gt;= 10 &amp;&amp; ObjectManager.Me.Level &lt; 15" />
+    <QuestsSorted Action="LoadProfile" NameClass="Wholesome\Blood Elf (10-20).xml" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="If" NameClass="ObjectManager.Me.PlayerRace == PlayerFactions.BloodElf &amp;&amp; ObjectManager.Me.Level &gt;= 15 &amp;&amp; Usefuls.ContinentId != (int)ContinentId.Kalimdor &amp;&amp; wManager.Wow.Helpers.Usefuls.MapZoneName != &quot;Undercity&quot;" />
+    <QuestsSorted Action="LoadProfile" NameClass="Wholesome\Helper\GoTo GhostlandsToUndercity.xml" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="If" NameClass="Usefuls.ContinentId != (int)ContinentId.Kalimdor" />
+    <QuestsSorted Action="LoadProfile" NameClass="Wholesome\Helper\GoTo UndercityToOgrimmar.xml" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="If" NameClass="ObjectManager.Me.PlayerRace == PlayerFactions.Orc &amp;&amp; ObjectManager.Me.Level &gt;= 1 &amp;&amp; ObjectManager.Me.Level &lt; 12" />
+    <QuestsSorted Action="If" NameClass="ObjectManager.Me.PlayerRace == PlayerFactions.Orc &amp;&amp; ObjectManager.Me.Level &gt;= 1 &amp;&amp; ObjectManager.Me.Level &lt; 6" />
+    <QuestsSorted Action="LoadProfile" NameClass="Wholesome\Orc (1-6).xml" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="If" NameClass="ObjectManager.Me.PlayerRace == PlayerFactions.Orc &amp;&amp; ObjectManager.Me.Level &gt;= 6 &amp;&amp; ObjectManager.Me.Level &lt; 10" />
+    <QuestsSorted Action="LoadProfile" NameClass="Wholesome\Orc (6-10).xml" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="If" NameClass="ObjectManager.Me.PlayerRace == PlayerFactions.Orc &amp;&amp; ObjectManager.Me.Level &gt;= 10 &amp;&amp; (!wManager.Wow.Helpers.SpellManager.KnowSpell(1515)) &amp;&amp; (ObjectManager.Me.WowClass == WoWClass.Hunter)" />
+    <QuestsSorted Action="LoadProfile" NameClass="Wholesome\Helper\Classquest Orc Hunter.xml" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="If" NameClass="ObjectManager.Me.PlayerRace == PlayerFactions.Orc &amp;&amp; ObjectManager.Me.Level &gt;= 10 &amp;&amp; ObjectManager.Me.Level &lt; 12" />
+    <QuestsSorted Action="LoadProfile" NameClass="Wholesome\Orc (10-12).xml" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="If" NameClass="ObjectManager.Me.PlayerRace == PlayerFactions.Tauren &amp;&amp; ObjectManager.Me.Level &gt;= 10 &amp;&amp; (!wManager.Wow.Helpers.SpellManager.KnowSpell(5487)) &amp;&amp; (ObjectManager.Me.WowClass == WoWClass.Druid)" />
+    <QuestsSorted Action="LoadProfile" NameClass="Wholesome\Helper\Classquest Tauren Druid.xml" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="If" NameClass="ObjectManager.Me.PlayerRace == PlayerFactions.Orc &amp;&amp; ObjectManager.Me.Level &gt;= 10 &amp;&amp; (!wManager.Wow.Helpers.SpellManager.KnowSpell(697)) &amp;&amp; (ObjectManager.Me.WowClass == WoWClass.Warlock)" />
+    <QuestsSorted Action="LoadProfile" NameClass="Wholesome\Helper\Classquest Orc Warlock.xml" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="If" NameClass="ObjectManager.Me.PlayerRace == PlayerFactions.BloodElf &amp;&amp; ObjectManager.Me.Level &gt;= 15 &amp;&amp; Usefuls.ContinentId != (int)ContinentId.Kalimdor &amp;&amp; wManager.Wow.Helpers.Usefuls.MapZoneName != &quot;Undercity&quot;" />
+    <QuestsSorted Action="LoadProfile" NameClass="Wholesome\Helper\GoTo GhostlandsToUndercity.xml" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="If" NameClass="ObjectManager.Me.PlayerRace == PlayerFactions.BloodElf &amp;&amp; Usefuls.ContinentId != (int)ContinentId.Kalimdor &amp;&amp; ObjectManager.Me.Level &gt; 12 &amp;&amp; ObjectManager.Me.Level &lt; 20" />
+    <QuestsSorted Action="LoadProfile" NameClass="Wholesome\Helper\GoTo UndercityToOgrimmar.xml" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="If" NameClass="Lua.LuaDoString&lt;string&gt;(&quot;bindlocation = GetBindLocation(); return bindlocation;&quot;) != &quot;Orgrimmar&quot;" />
+    <QuestsSorted Action="LoadProfile" NameClass="Wholesome\Helper\Hearthstone Ogrimmar.xml" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="If" NameClass="ObjectManager.Me.Level &gt;= 12 &amp;&amp; ObjectManager.Me.Level &lt; 20" />
+    <QuestsSorted Action="LoadProfile" NameClass="Wholesome\The Barrens (12-20).xml" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="If" NameClass="Lua.LuaDoString&lt;string&gt;(&quot;bindlocation = GetBindLocation(); return bindlocation;&quot;) != &quot;Orgrimmar&quot;" />
+    <QuestsSorted Action="LoadProfile" NameClass="Wholesome\Helper\Hearthstone Ogrimmar.xml" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="If" NameClass="ObjectManager.Me.Level &gt;= 20 &amp;&amp; wManager.wManagerSetting.CurrentSetting.GroundMountName == string.Empty &amp;&amp; ObjectManager.Me.PlayerRace == PlayerFactions.Orc" />
+    <QuestsSorted Action="LoadProfile" NameClass="Wholesome\Helper\Riding Ogrimmar.xml" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="If" NameClass="ObjectManager.Me.Level &gt;= 20 &amp;&amp; wManager.wManagerSetting.CurrentSetting.GroundMountName == string.Empty &amp;&amp; ObjectManager.Me.PlayerRace == PlayerFactions.BloodElf" />
+    <QuestsSorted Action="LoadProfile" NameClass="Wholesome\Helper\Riding Silvermoon.xml" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="If" NameClass="ObjectManager.Me.Level &gt;= 20 &amp;&amp; ObjectManager.Me.Level &lt; 25" />
+    <QuestsSorted Action="LoadProfile" NameClass="Wholesome\Stonetalon Mountains (20-25).xml" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="If" NameClass="ObjectManager.Me.Level &gt;= 25 &amp;&amp; ObjectManager.Me.Level &lt; 30" />
+    <QuestsSorted Action="LoadProfile" NameClass="Wholesome\AshenAndThousand (25-30).xml" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="If" NameClass="ObjectManager.Me.Level &gt;= 30 &amp;&amp; ObjectManager.Me.Level &lt; 35" />
+    <QuestsSorted Action="LoadProfile" NameClass="Wholesome\Desolace (30-35).xml" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="If" NameClass="ObjectManager.Me.Level &gt;= 35 &amp;&amp; ObjectManager.Me.Level &lt; 40" />
+    <QuestsSorted Action="LoadProfile" NameClass="Wholesome\Dustwallow Marsh (35-40).xml" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="If" NameClass="ObjectManager.Me.Level &gt;= 40 &amp;&amp; ObjectManager.Me.Level &lt; 45" />
+    <QuestsSorted Action="LoadProfile" NameClass="Wholesome\Feralas (40-45).xml" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="If" NameClass="ObjectManager.Me.Level &gt;= 45 &amp;&amp; ObjectManager.Me.Level &lt; 50" />
+    <QuestsSorted Action="LoadProfile" NameClass="Wholesome\Tanaris (45-50).xml" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="If" NameClass="ObjectManager.Me.Level &gt;= 50 &amp;&amp; ObjectManager.Me.Level &lt; 58" />
+    <QuestsSorted Action="LoadProfile" NameClass="Wholesome\UnGoro Crater (50-58).xml" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="RunLuaCode" NameClass="DEFAULT_CHAT_FRAME:AddMessage(&quot;You are Higher then lvl 57, skipping Lowlevel-Part.&quot;)" />
+    <QuestsSorted Action="If" NameClass="ObjectManager.Me.Level &gt;= 58 &amp;&amp; ObjectManager.Me.Level &lt; 68 &amp;&amp; wManager.Wow.Helpers.Usefuls.MapZoneName == &quot;Orgrimmar&quot;" />
+    <QuestsSorted Action="LoadProfile" NameClass="Wholesome\Helper\GoTo OrgrimmarBlastedLands.xml" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="If" NameClass="ObjectManager.Me.Level &gt;= 58 &amp;&amp; ObjectManager.Me.Level &lt; 68" />
+    <QuestsSorted Action="LoadProfile" NameClass="Wholesome\Outland (58-70).xml" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="If" NameClass="ObjectManager.Me.Level &gt;= 68 &amp;&amp; ObjectManager.Me.Level &lt;= 80 &amp;&amp; wManager.Wow.Helpers.Usefuls.MapZoneName == &quot;Orgrimmar&quot;" />
+    <QuestsSorted Action="LoadProfile" NameClass="Wholesome\Helper\GoTo DurotarGoToBoreanTundra.xml" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="If" NameClass="ObjectManager.Me.Level &gt;= 68 &amp;&amp; ObjectManager.Me.Level &lt;= 80" />
+    <QuestsSorted Action="LoadProfile" NameClass="Wholesome\Grind (70-80).xml" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+  </QuestsSorted>
+  <NpcQuest />
+  <Npc />
+  <EasyQuests />
+  <Script>using robotManager.Helpful;
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
+using System.Linq;
+using System.Threading;
+using wManager.Events;
+using wManager.Wow.Bot.Tasks;
+using wManager.Wow.Enums;
+using wManager.Wow.Helpers;
+using wManager.Wow.ObjectManager;
+using System.ComponentModel;
+using System.Configuration;
+using System.Net;
+using System.Windows.Forms;
+using robotManager.Products;
+using System.Threading.Tasks;
+
+
+    public class SettingsWow
+    {
+        public static void Settings()
+        {
+            Logging.Write("[Settings]: Started");
+            wManager.wManagerSetting.CurrentSetting.Repair = true;
+            Logging.Write("[Settings]: Repair = true");	
+            wManager.wManagerSetting.CurrentSetting.SellGray = true;
+            Logging.Write("[Settings]: SellGray = true");
+            wManager.wManagerSetting.CurrentSetting.SellGreen = true;
+            Logging.Write("[Settings]: SellGreen = true");
+            wManager.wManagerSetting.CurrentSetting.Selling = true;
+            Logging.Write("[Settings]: Selling = true");
+            wManager.wManagerSetting.CurrentSetting.MinFreeBagSlotsToGoToTown = 3;
+            Logging.Write("[Settings]: MinFreeBagSlotsToGoToTown = 3");
+            wManager.wManagerSetting.CurrentSetting.SearchRadius = 300;
+            Logging.Write("[Settings]: CurrentSetting.SearchRadius = 300");
+            wManager.wManagerSetting.CurrentSetting.MaxUnitsNear = 4;
+            Logging.Write("[Settings]: MaxUnitsNear = 4");
+            wManager.wManagerSetting.CurrentSetting.NpcScanAuctioneer = false;
+            Logging.Write("[Settings]: NpcScanAuctioneer = false");
+            wManager.wManagerSetting.CurrentSetting.NpcScanMailboxes = true;
+            Logging.Write("[Settings]: NpcScanMailboxes = true");
+            wManager.wManagerSetting.CurrentSetting.NpcScanRepair = true;
+            Logging.Write("[Settings]: NpcScanRepair = false");
+            wManager.wManagerSetting.CurrentSetting.NpcScanVendor = true;
+            Logging.Write("[Settings]: NpcScanVendor = false");
+
+            wManager.wManagerSetting.CurrentSetting.HarvestHerbs = false;
+            Logging.Write("[Settings]: HarvestHerbs = false");
+            wManager.wManagerSetting.CurrentSetting.HarvestMinerals = false;
+            Logging.Write("[Settings]: HarvestMinerals = false");
+
+            wManager.wManagerSetting.CurrentSetting.DrinkPercent = 25;
+            Logging.Write("[Settings]: DrinkPercent = 25");
+            wManager.wManagerSetting.CurrentSetting.FoodPercent = 25;
+            Logging.Write("[Settings]: FoodPercent = 25");
+            wManager.wManagerSetting.CurrentSetting.TryToUseBestBagFoodDrink = true;
+            Logging.Write("[Settings]: TryToUseBestBagFoodDrink = true");
+
+            wManager.wManagerSetting.CurrentSetting.SmoothPath = true;
+              Logging.Write("[Settings]: SmoothPath = true");
+
+            wManager.wManagerSetting.CurrentSetting.FlightMasterDiscoverRange = 1000;
+	Logging.Write("[Settings]: FlightMasterDiscoverRange = 1000");
+            wManager.wManagerSetting.CurrentSetting.FlightMasterTaxiUseOnlyIfNear = true;
+	Logging.Write("[Settings]: FlightMasterTaxiUseOnlyIfNear = true");
+            wManager.wManagerSetting.CurrentSetting.SkinNinja = false;
+	Logging.Write("[Settings]: SkinNinja = false");
+            wManager.wManagerSetting.CurrentSetting.TryToAvoidEnemyGroupsRatio = 0;
+	Logging.Write("[Settings]: TryToAvoidEnemyGroupsRatio = 0");
+            wManager.wManagerSetting.CurrentSetting.FightInteractTargetMinDistance = 29;
+	Logging.Write("[Settings]: FightInteractTargetMinDistance = 29");
+            wManager.wManagerSetting.CurrentSetting.LootChests = true;
+	Logging.Write("[Settings]: LootChests = true");
+            wManager.wManagerSetting.CurrentSetting.LootInCombat = true;
+	Logging.Write("[Settings]:LootInCombat = true");
+            wManager.wManagerSetting.CurrentSetting.IgnoreCombatWithPet = true;
+	Logging.Write("[Settings]:IgnoreCombatWithPet = true");
+
+           if (wManager.wManagerSetting.CurrentSetting.GroundMountName == string.Empty)
+            {
+                wManager.wManagerSetting.CurrentSetting.UseGroundMount = false;
+                wManager.wManagerSetting.CurrentSetting.Save();
+                Logging.Write("[Settings]; UseGroundMount = False");
+            }
+            else
+            if (wManager.wManagerSetting.CurrentSetting.GroundMountName != string.Empty)
+            {
+                wManager.wManagerSetting.CurrentSetting.UseGroundMount = true;
+                wManager.wManagerSetting.CurrentSetting.Save();
+                Logging.Write("[Settings]; UseGroundMount = True");
+            }
+
+            if (wManager.wManagerSetting.CurrentSetting.FlyingMountName == string.Empty)
+            {
+                wManager.wManagerSetting.CurrentSetting.UseFlyingMount = false;
+                Logging.Write("[Settings]; UseFlyingMount = False");
+            }
+            else
+            if (wManager.wManagerSetting.CurrentSetting.FlyingMountName != string.Empty)
+            {
+                wManager.wManagerSetting.CurrentSetting.UseFlyingMount = true;
+                Logging.Write("[Settings]; UseFlyingMount = True");
+            }
+
+            wManager.wManagerSetting.CurrentSetting.Save();
+            Logging.Write("Settings complete.");
+
+        }
+    }
+
+public class blacklistzone
+    {
+        public static void List()
+        {
+                wManager.wManagerSetting.AddBlackListZone(new Vector3(1733.73, -4426.244, 37.31858, "None"), 5.00f, true);
+                wManager.wManagerSetting.AddBlackListZone(new Vector3(1748.4, -4416.781, 37.27323, "None"), 5.00f, true);
+                wManager.wManagerSetting.AddBlackListZone(new Vector3(1668.088, -4391.733, 22.17756, "None"), 5.00f, true);
+                wManager.wManagerSetting.AddBlackListZone(new Vector3(1666.025, -4365.162, 27.4433, "None"), 7.00f, true);
+                wManager.wManagerSetting.AddBlackListZone(new Vector3(1537.106, -4379.451, 16.90634, "None"), 5.00f, true);
+                wManager.wManagerSetting.AddBlackListZone(new Vector3(1549.166, -4327.502, 20.44855, "None"), 5.00f, true);
+                wManager.wManagerSetting.AddBlackListZone(new Vector3(1737.044, -4478.17, 32.06934, "None"), 4.00f, true);
+                wManager.wManagerSetting.AddBlackListZone(new Vector3(1888.123, -4452.734, 19.73206, "None"), 5.00f, true);
+                wManager.wManagerSetting.AddBlackListZone(new Vector3(1856.235, -4422.517, 7.30606, "None"), 5.00f, true);
+                wManager.wManagerSetting.AddBlackListZone(new Vector3(1856.235, -4422.517, 7.30606, "None"), 5.00f, true);
+                wManager.wManagerSetting.AddBlackListZone(new Vector3(1890.279, -4417.67, 12.51004, "None"), 5.00f, true);
+                wManager.wManagerSetting.AddBlackListZone(new Vector3(1940.485, -4693.287, 29.72934, "None"), 5.00f, true);
+                wManager.wManagerSetting.AddBlackListZone(new Vector3(1872.12, -4522.215, 26.97758, "None"), 5.00f, true);
+	wManager.wManagerSetting.AddBlackListZone(new Vector3(-628.2213f, -4465.777f, 46.50518f, "None"), 30.00f, true);
+	Logging.Write("[Blacklist]: Blacklist Activated.");
+                wManager.wManagerSetting.CurrentSetting.Save();  
+        }
+    }
+</Script>
+  <OffMeshConnections />
+  <BlacklistNpc />
+  <BlacklistNpcType />
+  <Blackspots />
+</EasyQuestProfile>

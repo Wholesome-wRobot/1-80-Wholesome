@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EasyQuestProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <QuestsSorted>
+    <QuestsSorted Action="RunLuaCode" NameClass="DEFAULT_CHAT_FRAME:AddMessage(&quot;Current Profile: Learn Riding Ogrimmar&quot;)" />
+    <QuestsSorted Action="If" NameClass="!wManager.Wow.Helpers.Skill.Has(wManager.Wow.Enums﻿.SkillLine.Riding) &amp;&amp; Lua.LuaDoString&lt;int&gt;(&quot;return GetMoney()&quot;) &gt;= 100000" />
+    <QuestsSorted Action="RunCode" NameClass="        if (wManager.Wow.Bot.Tasks.GoToTask.ToPositionAndIntecractWithNpc(new robotManager.Helpful.Vector3(2151.36f, -4654.14f, 50.1143f), 4752)) &#xD;&#xA;        { &#xD;&#xA;            wManager.Wow.Helpers.Usefuls.SelectGossipOption(wManager.Wow.Enums.GossipOptionsType.trainer);&#xD;&#xA;            wManager.Wow.Helpers.Trainer.TrainingSpell();&#xD;&#xA;        }" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="RunLuaCode" NameClass="DEFAULT_CHAT_FRAME:AddMessage(&quot;Current Profile: Learn Riding Ogrimmar, Done!&quot;)" />
+    <QuestsSorted Action="If" NameClass="wManager.Wow.Helpers.SpellManager.KnowSpell(580)" />
+    <QuestsSorted Action="RunLuaCode" NameClass="DEFAULT_CHAT_FRAME:AddMessage(&quot;You already Know a timber Wolf, setting Mount Name&quot;)" />	
+    <QuestsSorted Action="RunCode" NameClass="wManager.wManagerSetting.CurrentSetting.GroundMountName = &quot;Timber Wolf&quot;;" />
+    <QuestsSorted Action="RunCode" NameClass="wManager.Wow.Forms.UserControlTabGeneralSettings.ReloadGeneralSettings();" />
+    <QuestsSorted Action="EndIf" NameClass="" />	
+    <QuestsSorted Action="If" NameClass="wManager.wManagerSetting.CurrentSetting.GroundMountName == string.Empty" />
+    <QuestsSorted Action="RunLuaCode" NameClass="DEFAULT_CHAT_FRAME:AddMessage(&quot;Current Profile: Buy Ride!&quot;)" />
+    <QuestsSorted Action="RunCode" NameClass="if (wManager.wManagerSetting.CurrentSetting.GroundMountName == string.Empty)&#xD;&#xA; {&#xD;&#xA; wManager.Wow.Bot.Tasks.GoToTask.ToPositionAndIntecractWithNpc(new Vector3(2159.36f, -4653.74f, 49.7412f), 3362, 1, false);&#xD;&#xA; System.Threading.Thread.Sleep(5000);&#xD;&#xA; wManager.Wow.Helpers.Vendor.BuyItem(&quot;Horn of the Timber Wolf&quot;,1); // change Skinning Knife to what item you want. do not remove &quot;&quot;&#xD;&#xA; System.Threading.Thread.Sleep(5000); &#xD;&#xA; }&#xD;&#xA; &#xD;&#xA; &#xD;&#xA;" />
+    <QuestsSorted Action="RunCode" NameClass="if (ItemsManager.HasItemById(1132)) &#xD;&#xA; {&#xD;&#xA; ItemsManager.UseItem(1132);﻿&#xD;&#xA; System.Threading.Thread.Sleep(1000); &#xD;&#xA; }" />
+    <QuestsSorted Action="RunCode" NameClass="wManager.wManagerSetting.CurrentSetting.GroundMountName = &quot;Timber Wolf&quot;;" />
+    <QuestsSorted Action="RunCode" NameClass="wManager.Wow.Forms.UserControlTabGeneralSettings.ReloadGeneralSettings();" />
+    <QuestsSorted Action="RunLuaCode" NameClass="DEFAULT_CHAT_FRAME:AddMessage(&quot;Current Profile: Buy Ride, Done!&quot;)" />
+    <QuestsSorted Action="EndIf" NameClass="" />
+    <QuestsSorted Action="LoadProfile" NameClass="Wholesome\Launcher.xml" />
+  </QuestsSorted>
+  <NpcQuest />
+  <Npc />
+  <EasyQuests />
+  <Script>
+public class MyCustomScript
+{
+    static MyCustomScript()
+    {
+        // You can put here code to run when bot start, you can also add methods and classes.
+    }
+}
+</Script>
+  <OffMeshConnections />
+  <BlacklistNpc />
+  <BlacklistNpcType />
+  <Blackspots />
+</EasyQuestProfile>
